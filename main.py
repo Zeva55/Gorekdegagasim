@@ -104,8 +104,8 @@ def set_master(update, context):
 
     game.set_master(update.message.from_user.id)
 
-    show_word_btn = InlineKeyboardButton("👻Sözə bax", callback_data='show_word')
-    change_word_btn = InlineKeyboardButton("♻️Sözü dəyiş", callback_data='change_word')
+    show_word_btn = InlineKeyboardButton("Sözə baxmaq 🔎", callback_data='show_word')
+    change_word_btn = InlineKeyboardButton("Növbəti Söz ➡️", callback_data='change_word')
 
     keyboard = [[show_word_btn], [change_word_btn]]
     reply_markup = InlineKeyboardMarkup(keyboard)
