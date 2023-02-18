@@ -106,6 +106,7 @@ def set_master(update, context):
 
     show_word_btn = InlineKeyboardButton("Sözə baxmaq 🔎", callback_data='show_word')
     change_word_btn = InlineKeyboardButton("Növbəti Söz ➡️", callback_data='change_word')
+    master_btn = InlineKeyboardButton("Aparıcı", callback_data='master')
 
     keyboard = [[show_word_btn], [change_word_btn]]
     reply_markup = InlineKeyboardMarkup(keyboard)
